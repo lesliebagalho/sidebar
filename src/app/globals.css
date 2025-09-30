@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --sidebar-width: 200px;
+}
+
+/* Reset e base */
+*{ box-sizing: border-box; }
+html, body, #_next{ height: 100%; }
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+}
+
+/* Área principal - empurra o conteúdo pra direita */
+.main{
+  margin-left: var(--sidebar-width);
+  padding: 20px;
+  min-height: 100vh;
+}
+
+/* Responsividade: em telas pequenas a sidebar vira topo */
+@media(max-width:768px){
+  :root {--sidebar-width: 0px;}
+  .main{margin-left: 0; padding-top: 12px;}
+}

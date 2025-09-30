@@ -1,0 +1,49 @@
+.sidebar{
+    width: var(--sidebar-width);
+    height: 100vh;
+    background: #111;
+    color: #fff;
+    padding: 20px;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.logo{
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.nav{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.nav a{
+    color: #ddd;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: 0.2s;
+}
+
+/* .nav a:hover{
+    color: #fff;
+    font-weight: bold;
+} */
+
+/* Comportamento em telas pequenas: sidebar deixa de ser fixa e fica em cima */
+@media (max-width: 768px){
+    .sidebar{
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+
+    .nav{
+        display: flex;
+        flex-direction: row;
+    }
+}

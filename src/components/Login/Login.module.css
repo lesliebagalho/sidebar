@@ -1,0 +1,60 @@
+.login {
+    width: 300px;
+    border: 1px solid #CDDBDD;
+    border-radius: 4px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+
+    h1 {
+        font-family: Arial, sans-serif;
+        font-size: 26px;
+        font-weight: 700;
+    }
+
+    hr{
+        margin-bottom: 22px;
+        border: 1px solid #000;
+        width: 50%;
+    }
+
+    p{
+        margin: 12px 0;
+        font-size: 12px;
+    }
+
+    .btn_cadastrar{
+        background-color: #e8e7e7;
+        padding: .4rem .6rem;
+        margin-left: 15px;
+        color: #3D9DB3;
+        border-radius: 3px;
+    }
+
+}
+
+.input {
+    margin-bottom: 12px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    input {
+        border: 1px solid #DDDDDD;
+        font-size: 12px;
+        padding: .4rem 0 .4rem .5rem;
+        border-radius: 3px;
+    }
+}
+
+.btn_logar{
+    background-color: #3D9DB3;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    color: #fff;
+    border-radius: 3px;
+    margin: 6px 0;
+}
