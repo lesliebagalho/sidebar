@@ -11,10 +11,10 @@ export default function Sidebar(){
                 <Link href="/">🏠 Home</Link>
                 <Link href="/sobre">ℹ️ Sobre</Link>
                 <Link href="/contato">📞 Contato</Link>
+                <hr />
+                <Link href="/login/entrar">🔐 Login</Link>
+                <Link href="/login/cadastrar">📝 Cadastrar</Link>
             </nav>
-        <Footer />
         </aside>
-
-        
     )
 }

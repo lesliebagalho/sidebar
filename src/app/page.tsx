@@ -6,8 +6,6 @@ export default function Home() {
     <div className="home">
       <h1>Entrar na Plataforma</h1>
 
-      <Login />
-
     </div>
   )
 }
